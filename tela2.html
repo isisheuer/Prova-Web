@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100%;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 1%;
+            max-width: 900px;
+            width: 90%;
+            margin: 2% auto;
+        }
+        .foto img {
+            max-width: 100%;
+            height: auto;
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        .info {
+            width: 100%;
+        }
+
+        .quantidades, .opcao{
+            display: flex;
+            gap: 5px;
+            margin: 1% 0;
+            justify-content: center;
+        }
+        .quantidades button{
+            background-color: #B26287;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .detalhe {
+            text-align: center;
+            margin-top: 1%;
+        }
+
+        .botao {
+            display: flex;
+            justify-content: center;
+            margin-top: 5%;
+            
+        }
+
+        .botao .adicionar{
+            padding: 2% 2%;
+            background-color: #B26287;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 100%;
+        }
+
+        .extras {
+            width: 100%;
+            padding: 1%;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="foto">
+            <img src="produto1.jpg" alt="Imagem do Produto">
+        </div>
+        <div class="info">
+            <p class="opcao">Escolha a quantidade</p>
+            <div class="quantidades">
+                <span><button>50mL</button></span>
+                <span><button>100mL</button></span>
+                <span><button>120mL</button></span>
+            </div>
+            <div class="detalhe">
+                <p>LANCÔME</p>
+                <h2>Máscara facial lancôme hydra zen rose sorbert cryo-mask</h2>
+                <h2>R$ 75,99</h2>
+                <p class="descricao">Produto usado pra blablabla</p>
+            </div>
+            <div class="botao">
+                <button class="adicionar">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+        <div class="extras">
+            <h3>Informações Extras</h3>
+            <p>Máscara Facial Lancôme Hydra Zen Rose Sorbet Cryo-Mask
+            Hydra Zen Rose Sorbet Cryo-Mask garante uma pele perfeita e refrescada em apenas 5 minutos! Essa máscara facial formulada com ácido salicílico e água de rosas ajuda a reduzir visivelmente a aparência dos poros e a suavizar a textura da pele, iluminando e proporcionando um glow instantâneo. Sua textura irresistível de sorbet pink refresca e revitaliza a pele cansada e sem brilho. Hydra Zen Rose Sorbet Cryo-Mask de Lancôme é uma máscara facial com textura sorbet que garante a pele perfeita em apenas 5 minutos.</p>
+        </div>
+    </div>
+</body>
+</html>

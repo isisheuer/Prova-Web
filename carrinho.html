@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: center;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 800px;
+        }
+
+        .produto, .quantidade, .valor {
+            text-align: center;
+        }
+
+        .produto img {
+            width: 80px;
+            height: auto;
+        }
+
+        .produto h3 {
+            font-size: 16px;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        .produto p {
+            font-size: 14px;
+            color: #555;
+            margin: 0;
+        }
+
+        .preco-antigo {
+            font-size: 12px;
+            color: #999;
+            text-decoration: line-through;
+        }
+
+        .preco-atual {
+            font-size: 16px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .quantidade {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .quantidade-controls {
+            display: flex;
+            align-items: center;
+            margin: 5px 0;
+        }
+
+        .quantidade-controls button {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .quantidade-controls input {
+            width: 40px;
+            text-align: center;
+            border: 1px solid #ddd;
+            font-size: 16px;
+        }
+
+        .remove {
+            font-size: 12px;
+            color: #333;
+            text-decoration: underline;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+
+        .favorito {
+            font-size: 24px;
+            color: #ccc;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+
+        .valor {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .valor .preco-antigo {
+            display: block;
+            font-size: 12px;
+            text-decoration: line-through;
+            color: #999;
+        }
+
+        .valor .preco-atual {
+            font-size: 16px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .valor .parcelado {
+            font-size: 12px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="produto">
+        <img src="produto1.jpg" alt="Produto">
+        <h3>LANCÔME</h3>
+        <p>máscara facial lancôme hydra zen<br>rose sorbert cryo-mask</p>
+        <p>50ml | #479542</p>
+        <p class="preco-antigo">R$ 499,00</p>
+        <p class="preco-atual">R$ 361,00</p>
+    </div>
+
+    <div class="quantidade">
+        <div class="quantidade-controls">
+            <button>-</button>
+            <input type="text" value="1">
+            <button>+</button>
+        </div>
+        <span class="remove">Remover</span>
+        <span class="favorito">♡</span>
+    </div>
+
+    <div class="valor">
+        <span class="preco-antigo">R$ 499,00</span>
+        <span class="preco-atual">R$ 361,00</span>
+        <p class="parcelado">ou 10x de R$ 36,10</p>
+    </div>
+
+    <div class="produto">
+        <img src="produto2.jpg" alt="Produto">
+        <h3>LANCÔME</h3>
+        <p>máscara facial lancôme hydra zen<br>rose sorbert cryo-mask</p>
+        <p>50ml | #479542</p>
+        <p class="preco-antigo">R$ 499,00</p>
+        <p class="preco-atual">R$ 361,00</p>
+    </div>
+
+    <div class="quantidade">
+        <div class="quantidade-controls">
+            <button>-</button>
+            <input type="text" value="1">
+            <button>+</button>
+        </div>
+        <span class="remove">Remover</span>
+        <span class="favorito">♡</span>
+    </div>
+
+    <div class="valor">
+        <span class="preco-antigo">R$ 499,00</span>
+        <span class="preco-atual">R$ 361,00</span>
+        <p class="parcelado">ou 10x de R$ 36,10</p>
+    </div>
+
+    <div class="produto">
+        <img src="produto3.jpg" alt="Produto">
+        <h3>LANCÔME</h3>
+        <p>máscara facial lancôme hydra zen<br>rose sorbert cryo-mask</p>
+        <p>50ml | #479542</p>
+        <p class="preco-antigo">R$ 499,00</p>
+        <p class="preco-atual">R$ 361,00</p>
+    </div>
+
+    <div class="quantidade">
+        <div class="quantidade-controls">
+            <button>-</button>
+            <input type="text" value="1">
+            <button>+</button>
+        </div>
+        <span class="remove">Remover</span>
+        <span class="favorito">♡</span>
+    </div>
+
+    <div class="valor">
+        <span class="preco-antigo">R$ 499,00</span>
+        <span class="preco-atual">R$ 361,00</span>
+        <p class="parcelado">ou 10x de R$ 36,10</p>
+    </div>
+</div>
+
+</body>
+</html>

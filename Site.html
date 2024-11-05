@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+        
+
+        body{
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+
+        }
+        .cabecalho{
+            background-color: #B26287;
+            }
+        .menu{
+            background-color: #F2A9C7;
+            color: white;
+            display: flex;
+            width: 100%;
+            height: 100px;
+            justify-content: space-around;
+
+        }
+        .perfumaria, .skin, .cabelos, .sabonetes{
+            display: flex;
+            align-content: center;
+            align-items: center;    
+        }
+        
+        .perfumaria button, .skin button, .cabelos button, .sabonetes button{
+            background-color: #B26287;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .banner{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 450px;
+        }
+        .banner img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .icones img{
+            
+            width: 25px;
+            height: 25px;
+        }
+        
+        .infos{
+            display: grid;
+            grid-template-areas: 
+                "icones icones icones icones"
+                "titulo1 titulo2 titulo3 titulo4"
+                "texto1 texto2 texto3 texto4";
+            margin-top: 5%;
+        }
+        .icones{
+            grid-area: icones;
+            display: flex;
+            text-align: center;
+            justify-content: space-evenly;
+            grid-gap: 180px;
+        }
+        .cartao, .caminhao, .cupom, .loja {
+            text-align: center;
+            justify-content: space-evenly;
+
+        }
+        .titulo1{
+            grid-area: titulo1;
+            text-align: center;
+        }
+        .titulo2{
+            grid-area: titulo2;
+            text-align: center;
+        }
+        .titulo3{
+            grid-area: titulo3;
+            text-align: center;
+        }
+        .titulo4{
+            grid-area: titulo4;
+            text-align: center;
+        }
+        .texto1{
+            grid-area: texto1;
+            text-align: center;
+        }
+        .texto2{
+            grid-area: texto2;
+            text-align: center;
+        }
+        .texto3{
+            grid-area: texto3;
+            text-align: center;
+        }
+        .texto4{
+            grid-area: texto4;
+            text-align: center;
+        }
+        .destaques{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 5%;
+            font-size:larger;
+        }
+        .produtosd{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            margin-top: 5%;
+
+        }
+        .produto1, .produto2, .produto3, .produto4{
+            border: 1px solid #e4d2d2b0;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .produto1 img, .produto1 img, .produto2 img, .produto3 img, .produto4 img{
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .produto1 h2, .produto2 h2, .produto3 h2, .produto4 h2{
+            font-size: 18px;
+            color: #333;
+        }
+        .produto1 p, .produto2 p, .produto3 p, .produto4 p{
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+        }
+        .produto1 button, .produto2 button, .produto3 button, .produto4 button{
+            background-color: #B26287;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+            @media (max-width: 768px) {
+        .menu {
+            flex-direction: column;
+            height: auto;
+            text-align: center;
+        }
+
+        .banner {
+            height: 250px;
+        }
+
+        .infos {
+            grid-template-areas: 
+                "icones"
+                "titulo1"
+                "titulo2"
+                "titulo3"
+                "titulo4"
+                "texto1"
+                "texto2"
+                "texto3"
+                "texto4";
+            grid-gap: 15px;
+        }
+
+        .icones {
+            flex-direction: column;
+            grid-gap: 10px;
+        }
+
+        .produtosd {
+            grid-template-columns: 1fr;
+            margin-top: 5%;
+        }
+
+        .produto1, .produto2, .produto3, .produto4 {
+            padding: 10px;
+        }
+    }
+
+    </style>
+</head>
+<body>
+
+    <div class="cabecalho">
+        <div class="logo">
+            <IMAGE></IMAGE>
+        </div>
+    </div>
+
+    <div class="menu">
+        <div class="perfumaria"><button>PERFUMARIA</button></div>
+        <div class="skin"><button>SKIN CARE</button></div>
+        <div class="cabelos"><button>CABELOS</button></div>
+        <div class="sabonetes"><button>SABONETES</button></div>
+    </div>
+
+    <div class="banner">
+        <img src="fotobanner.avif" alt="Banner de Promoção">
+    </div>
+
+    
+
+    <div class="infos">
+        <div class="icones">
+            <div class="cartao">
+                <img src="credito.png">
+            </div>
+
+            <div class="caminhao">
+                <img src="caminhao.png">
+            </div>
+            
+            <div class="cupom">
+                <img src="tag.png">
+            </div>
+
+            <div class="loja">
+                <img src="banco.png">
+            </div>
+
+        </div>
+            <div class="titulo1">
+                Parcelamento em até 10x
+            </div>
+
+            <div class="titulo2">
+                Frete Grátis
+            </div>
+
+            <div class="titulo3">
+                15% de desconto
+            </div>
+
+            <div class="titulo4">
+                Retire em loja
+            </div>
+
+            <div class="texto1">
+                Com mínimo de R$30
+            </div>
+
+            <div class="texto2">
+                Nas compras acima de R$250
+            </div>
+
+            <div class="texto3">
+                em sua primeira compra no site
+            </div>
+
+            <div class="texto4">
+                grátis + 10%OFF
+            </div>
+    </div>
+
+    <div class="destaques">DESTAQUES</div>
+
+    <div class="produtosd">
+        <div class="produto1">
+            <img src= "produto1.jpg">
+            <h2>Produto 1 500mL</h2>
+            <p>R$ 275,00</p>
+            <button>Adicionar</button>
+        </div>
+        <div class="produto2">
+            <img src= "produto2.jpg">
+            <h2>Produto 1 500mL</h2>
+            <p>R$ 275,00</p>
+            <button>Adicionar</button>
+        </div>
+        <div class="produto3">
+            <img src= "produto3.jpg">
+            <h2>Produto 1 500mL</h2>
+            <p>R$ 275,00</p>
+            <button>Adicionar</button>
+        </div>
+        <div class="produto4">
+            <img src= "produto4.jpg">
+            <h2>Produto 1 500mL</h2>
+            <p>R$ 275,00</p>
+            <button>Adicionar</button>
+        </div>
+
+
+    </div>
+
+    
+</body>
+</html>
